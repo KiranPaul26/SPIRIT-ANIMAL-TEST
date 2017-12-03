@@ -1,0 +1,346 @@
+<!DOCTYPE>
+<html>
+    
+    <head>
+        
+        <title>Spirit Animal Quiz</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="cssSpirit/cssSpirit.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Amaranth|Arima+Madurai|Cookie|Cormorant+Garamond|Kaushan+Script|Lobster+Two|Merienda|Nobile|Overlock|Tangerine" rel="stylesheet">
+        <script src="https://use.fontawesome.com/1738d745de.js"></script>
+        <link rel="stylesheet" type="text/css" href="cssSpirit/hover-min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+        
+    
+    </head>
+    
+    <body>
+        
+        <!-- BEAR/BUTTERFLY/CROW/DEER/FOX/OWL/WOLF-->
+        <!-- NAME IN INPUT LETS YOU PICK ONLY ONE RADIO BUTTON -->
+        
+        
+                                                          <!-- CHECKLIST -->
+    
+                                        <!--GETTING MORE SECTION TO SHOW WHEN CLICKING ARROW-->
+                                        <!-- MESSAGE IF SOMEONE HASNT CHECKED A RADIO BUTTON -->
+        
+        
+        <h1 class="quizTitle">Who's Your Spirit Animal?</h1>
+        
+        <form id="quiz" name="quiz">
+            
+            
+            <div id="questionOne">
+            <p>1) Choose a natural element?</p>
+            
+            <input type="radio" name="q1" id="air" value="Air"> <span>Air</span><br/>                        <!--OWL/CROW/DEER/BUTTERFLY-->
+            <input type="radio" name="q1" id="earth" value="Earth"> <span>Earth</span><br/>                  <!--BEAR/DEER/WOLF-->
+            <input type="radio" name="q1" id="fire" value="Fire"> <span>Fire</span><br/>                     <!--FOX-->
+            <input type="radio" name="q1" id="water" value="Water"> <span>Water</span><br/><br/><br/>        <!--WOLF-->
+                
+            <button type="button" id="q1Btn" onclick="firstButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionTwo">
+            <p>2) When are you most active?</p>
+            
+            <input type="radio" name="q2" id="day" value="Day"> <span>Day</span><br/>                      <!--BUTTERFLY/CROW/BEAR/DEER-->
+            <input type="radio" name="q2" id="night" value="Night"> <span>Night</span><br/><br/><br/>      <!--OWL/FOX/WOLF/BEAR/DEER-->
+            
+            <button type="button" id="q2Btn" onclick="secondButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionThree">
+            <p>3) Which do you value more?</p>
+            
+            <input type="radio" name="q3" id="family" value="Family"> <span>Family</span><br/>            
+                <!--WOLF/CROW/DEER-->
+            <input type="radio" name="q3" id="independence" value="Independence"> <span>Independence</span> <br/><br/><br/>   
+                <!--OWL/FOX/BEAR/BUTTERFLY-->
+    
+            <button type="button" id="q3Btn" onclick="thirdButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionFour">
+            <p>4) What are you like?</p>
+            
+            <input type="radio" name="q4" id="leader" value="Leader"> <span>Leader</span><br/>                      <!--WOLF-->
+            <input type="radio" name="q4" id="scientist" value="Scientist"> <span>Scientist</span><br/>             <!--OWL-->
+            <input type="radio" name="q4" id="adventurer" value="Adventurer"> <span>Adventurer</span><br/>          <!--FOX-->
+            <input type="radio" name="q4" id="peacemaker" value="Peacemaker"> <span>Peacemaker</span><br/>          <!--DEER-->
+            <input type="radio" name="q4" id="psychic" value="Psychic"> <span>Psychic</span><br/>                   <!--CROW-->
+            <input type="radio" name="q4" id="optimist" value="Optimist"> <span>Optimist</span><br/>                <!--BUTTERFLY-->
+            <input type="radio" name="q4" id="protector" value="Protector"> <span>Protector</span><br/><br/><br/>   <!--BEAR-->
+            
+            <button type="button" id="q4Btn" onclick="fourthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionFive">
+            <p>5) When someone you know is overreacting about a situation.<br/>How do you react?</p>
+            
+            <input type="radio" name="q5" id="five1" value="Stay out of it."> <span>Stay out of it.</span><br/> 
+                <!--FOX/BEAR/CROW-->
+            <input type="radio" name="q5" id="five2" value="Get annoyed."> <span>Get annoyed.</span><br/>
+                <!--WOLF-->
+            <input type="radio" name="q5" id="five3" value="Try and figure out the meaning behind it."> <span>Try and figure out the meaning behind it.</span><br/> 
+                <!--OWL-->
+            <input type="radio" name="q5" id="five4" value="Give them advice."> <span>Give them advice.</span> <br/><br/><br/> 
+                <!--BUTTERFLY/DEER-->
+            
+            <button type="button" id="q5Btn" onclick="fifthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionSix">
+            <p>6) The neighbour asks you to housesit for £100 while they go on vacation.<br/>When they come back they only have £75 to give as they have overspent on vacation.<br/>How do you react?</p>
+            
+            <input type="radio" name="q6" id="six1" value="I am understanding."> <span>I am understanding.</span><br/> 
+                <!--BUTTERFLY-->
+            <input type="radio" name="q6" id="six2" value="Accept what I'm given but never do it again."> <span>Accept what I'm given but never do it again.</span><br/> 
+                <!--FOX-->
+            <input type="radio" name="q6" id="six3" value="Discuss a payment plan."> <span>Discuss a payment plan.</span><br/>
+                <!--OWL/DEER/CROW-->
+            <input type="radio" name="q6" id="six4" value="Get angry and demand the money now."> <span>Get angry and demand the money now.</span> <br/><br/><br/> 
+                <!--WOLF/BEAR-->
+            
+            <button type="button" id="q6Btn" onclick="sixthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionSeven">
+            <p>7) What word best describes you?</p>
+            
+            <input type="radio" name="q7" id="confident" value="Confident"> <span>Confident</span><br/>                <!--WOLF/BEAR-->
+            <input type="radio" name="q7" id="wild" value="Wild"> <span>Wild</span><br/>                               <!--FOX-->
+            <input type="radio" name="q7" id="cute" value="Cute"> <span>Cute</span><br/>                               <!--BUTTERFLY/DEER-->
+            <input type="radio" name="q7" id="mysterious" value="Mysterious"> <span>Mysterious</span><br/>             <!--CROW-->
+            <input type="radio" name="q7" id="wise" value="Wise"> <span>Wise</span><br/><br/><br/>                     <!--OWL-->
+            
+            <button type="button" id="q7Btn" onclick="seventhButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionEight">
+            <p>8) How often would you go on holiday?</p>
+            
+            <input type="radio" name="q8" id="eight1" value="Get me a plane and I will travel the world!"> <span>Get me a plane and I will travel the world!</span><br/>    
+                <!--OWL/FOX/BUTTERFLY-->
+            <input type="radio" name="q8" id="eight2" value="I like the occasional trip."> <span>I like the occasional trip.</span><br/>         <!--WOLF/CROW/DEER-->
+            <input type="radio" name="q8" id="eight3" value="I'd rather stay on my couch."> <span>I'd rather stay on my couch.</span>             <!--BEAR-->
+            <br/><br/><br/>
+            
+            <button type="button" id="q8Btn" onclick="eighthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionNine">
+            <p>9) Which would you do most on holiday?</p>
+            
+            <input type="radio" name="q9" id="nine1" value="Relaxing by Pool or on Beach."> <span>Relaxing by pool or on beach.</span><br/>             <!--BEAR/WOLF-->
+            <input type="radio" name="q9" id="nine2" value="Going to Bars and Clubs."> <span>Going to Bars and Clubs.</span><br/>
+                      <!--FOX/CROW/BUTTERFLY-->
+            <input type="radio" name="q9" id="nine3" value="Experience new culture."> <span>Experience new culture.</span><br/>
+                      <!--DEER-->
+            <input type="radio" name="q9" id="nine4" value="Read"> <span>Read</span> <br/><br/><br/>   
+                      <!--OWL-->
+            
+            <button type="button" id="q9Btn" onclick="ninthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionTen">
+            <p>10) You're watching TV and find that UFO's have been spotted in your area.<br/>How would you react?</p>
+            
+            <input type="radio" name="q10" id="ten1" value="Change the channel."> <span>Change the channel.</span><br/>     
+                <!--BEAR-->
+            <input type="radio" name="q10" id="ten2" value="Prepare for an alien invasion."> <span>Prepare for an alien invasion.</span><br/>
+                <!--FOX/DEER/WOLF-->
+            <input type="radio" name="q10" id="ten3" value="Research and learn about extraterrestrial life."> <span>Research and learn about extraterrestrial life.</span><br/>
+                <!--OWL/CROW-->
+            <input type="radio" name="q10" id="ten4" value="panic"> <span>Panic</span> <br/><br/><br/>   
+                <!--BUTTERFLY-->
+            
+            <button type="button" id="q10Btn" onclick="tenthButton();">NEXT QUESTION</button>
+            </div>
+            
+            
+            <div id="questionEleven">
+            <p>11) If someone was picking on you.<br/>How would you react?</p>
+            
+            <input type="radio" name="q11" id="eleven1" value="Run away."> <span>Run away.</span><br/>      
+                      <!--BUTTERFLY-->
+            <input type="radio" name="q11" id="eleven2" value="Punch them."> <span>Punch them.</span><br/>               
+                      <!--BEAR/WOLF-->
+            <input type="radio" name="q11" id="eleven3" value="Tell them to leave you alone!"> <span>Tell them to leave you alone!</span><br/>             
+                      <!--DEER-->
+            <input type="radio" name="q11" id="eleven4" value="Kill them with kindness."> <span>Kill them with kindness.</span><br/><br/><br/>     <!--CROW/OWL/FOX-->
+            
+            <button type="button" id="q11Btn" onclick="eleventhButton();">NEXT QUESTION</button>
+            </div>
+        
+            
+            <div id="questionTwelve">
+            <p>12) You see a strange plant.<br/>What do you do?</p>
+            
+            <input type="radio" name="q12" id="twelve1" value="Your curious, so you go closer."> <span>Your curious, so you go closer.</span><br/>     
+                <!--OWL/CROW/BUTTERFLY-->
+            <input type="radio" name="q12" id="twelve2" value="Back away it could be poisonous."> <span>Back away it could be poisonous.</span><br/>                
+                <!--FOX/DEER/WOLF-->
+            <input type="radio" name="q12" id="twelve3" value="I don't care."> <span>I don't care.</span> <br/><br/><br/>               
+                <!--BEAR-->
+            
+            <button type="button" id="q12Btn" onclick="finalButton();">CLICK HERE TO FIND YOUR SPIRIT ANIMAL...</button>
+            </div>
+            
+            <a href="#animalArticle"><i id="fa" class="fa  fa-angle-double-down fa-3x hvr-hang"></i></a>
+            
+        </form>
+        
+        <div id="animalArticle">
+            <article id="bearA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE BEAR</h1>
+                <img src="spiritAnimalPictures/elizabeth-meyers-146321.jpg" alt="Bear Image"/>
+                <p class="description">
+                    The spirit of the bear is <b>strong</b> and <b>confident</b>. <br/>
+                    You are a <b>natural-born leader</b>, <b>helpful</b>, and often <b>in charge</b>. <br/>
+                    As well as being very <b>wise</b> you can often be <b>overpowering</b> with your thoughts, so try and be <b>open-minded</b>. <br/>
+                    The bear also represents the importance of rest and <b>alone time</b> which you enjoy and need regularly. <br/>
+                    Your sensitivity allows you to bond well with people whilst being very <b>protective</b>, coming to the rescue of those in your circle in times of need. <br/>
+                    The one caution of which to remain aware is the <b>hot tempers</b>. Be careful not to attack without just cause. <br/><br/>
+                </p>
+                <p class="secondBit">The Bear Symbolises:</p>
+                <div class="wordsSection">
+                <p class="keywords">Aggression</p>
+                <p class="keywords">Authority</p>
+                <p class="keywords">Confidence</p>
+                <p class="keywords">Energy</p>
+                <p class="keywords">Patience</p>
+                <p class="keywords">Peace</p>
+                <p class="keywords">Power</p>
+                <p class="keywords">Strength</p>
+                </div>
+            </article>
+            
+            <article id="butterflyA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE BUTTERFLY</h1>
+                <img src="spiritAnimalPictures/boris-smokrovic-211468.jpg" alt="Bear Image"/>
+                <p class="description">
+                    You have a <b>natural lightness</b> of spirit! <br/>Loving the <b>beauty of nature</b> and guided by the greatest good when it comes to maintaining balance with the environment. <br/>You’ll find that you’re better equipped to look at difficult situations from another angle, you don't take things too seriously and overall keep a <b>positive outlook</b> on life. <br/>Change is not traumatic for you, your up for the challenge and it becomes a joyous experience. <br/>You're naturally <b>social</b>, <b>colorful</b> and <b>vibrant</b>. <br/><b>You live each moment to the fullest.</b> <br/> <br/>
+                </p>
+                <p class="secondBit">The Butterfly Symbolises:</p>
+                <p class="keywords">Awakening</p>
+                <p class="keywords">Celebration</p>
+                <p class="keywords">Change</p>
+                <p class="keywords">Grace</p>
+                <p class="keywords">Joy</p>
+                <p class="keywords">Life</p>
+                <p class="keywords">Lightness</p>
+                <p class="keywords">Transformation</p>
+            </article>
+            
+            <article id="crowA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE CROW</h1>
+                <img src="spiritAnimalPictures/tyler-quiring-21351.jpg" alt="Bear Image"/>
+                <p class="description">
+                    The spirit of the crow is <b>wise</b> and <b>fearless</b>. <br/>You <b>observe</b> and make sure you have the <b>best perspective</b> which gives you a better knowledge when it comes to your surroundings. <br/>You are <b>quick to accept change</b> and just as fast to move forward with new opportunities. <br/>You pride yourself with your <b>personal integrity</b>. You <b>keep your promises</b> and you <b>honor your word</b>. <br/>Your know to be quite <b>mischevious</b> and <b>play alot of tricks</b> on people. <br/>Your inquisitive philosophical nature leads you to constantly <b>question authority</b> and the status quo, sometimes just for the sake of asking, "Why?". <br/> <br/> 
+                </p>
+                <p class="secondBit">The Crow Symbolises:</p>
+                <p class="keywords">Adaptability</p>
+                <p class="keywords">Fearless</p>
+                <p class="keywords">Flexible</p>
+                <p class="keywords">Integrity</p>
+                <p class="keywords">Intelligent</p>
+                <p class="keywords">Mischevious</p>
+                <p class="keywords">Prophetic Insight</p>
+                <p class="keywords">Trickster</p>
+            </article>
+            
+            <article id="deerA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE DEER</h1>
+                <img src="spiritAnimalPictures/Screen%20Shot%202017-11-16%20at%2013.36.01.png" alt="Bear Image"/>
+                <p class="description">
+                    You are born with the <b>gentle giants</b> of the spiritual world. <b>Trust</b> and <b>kindness</b> is never overlooked with you. <br/>Your moves you make are purely instinctual and have the ability to <b>move through life</b> and its <b>obstacles with grace</b>. <br/>It might take you longer than most to make up your mind but when you do nothing and nobody can catch you! <br/>You can be very <b>inspiring</b> but do it with a nudge rather than pushing with your horns. <br/>Your a <b>naturally observant peacemaker</b>, showing the way for communal healing by providing different perspectives from a place of love. <br/>You have the <b>ability to see through the darkness</b> and <b>help guide others</b> to safety or home. <br/> <br/> 
+                </p>
+                <p class="secondBit">The Deer Symbolises:</p>
+                <p class="keywords">Alertness</p>
+                <p class="keywords">Beauty</p>
+                <p class="keywords">Creativity</p>
+                <p class="keywords">Gentleness</p>
+                <p class="keywords">Grace</p>
+                <p class="keywords">Influential</p>
+                <p class="keywords">Love</p>
+                <p class="keywords">Peace</p>
+            </article>
+            
+            <article id="foxA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE FOX</h1>
+                <img src="spiritAnimalPictures/Screen%20Shot%202017-fox-16%20at%2013.40.46.png" alt="Bear Image"/>
+                <p class="description">
+                    You have an uncanny knack for <b>awareness</b>. Very little gets by you, especially any form of trickery. <br/>As you respond to your environment and current circumstances your <b>reaction is swift and smooth</b>. <br/>You have <b>little trouble adapting to new situations</b> or <b>overcoming obstacles</b> on a moment-by-moment basis. <br/>You have a natural <b>sense of humor</b> that people may find hard to keep in check. <br/>You're an <b>agile thinker and doer</b>. Because of this, your <b>critical thinking skills</b> are <b>lightening quick</b> and usually <b>on the money!</b> <br/> <br/>
+                </p>
+                <p class="secondBit">The Fox Symbolises:</p>
+                <div class="wordsSectionF">
+                <p class="keywordsF">Adaptability</p>
+                <p class="keywordsF">Cleverness</p>
+                <p class="keywordsF">Cunning</p>
+                <p class="keywordsF">Guidance</p>
+                <p class="keywordsF">Protection</p>
+                <p class="keywordsF">Quick Thinking</p>
+                <p class="keywordsF">Strategy</p>
+                <p class="keywordsF">Trickster</p>
+                </div>
+            </article>
+            
+            <article id="owlA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE OWL</h1>
+                <img src="spiritAnimalPictures/Screen%20Shot%202017-11-15%20at%2013.38.57.png" alt="Bear Image"/>
+                <p class="description">
+                    The spirit of the Owl is <b>wisdom</b>. <br/>You are <b>keen</b>, <b>perceptive</b>, <b>skeptical</b> and have a <b>strong intuition</b> and can access information and wisdom that's usually hidden to most. <br/>You're in touch with your subconscious and <b>don't fear death and darkness</b>, embracing them as part of the continual cycle of life. <br/>You <b>adaptable</b> and <b>thrive on change.</b> <br/>Once your mind is set on something there is no stopping you to achieve it. <br/>You have a constant need of <b>freedom</b> and <b>solitude.</b> <br/>Even though you are a <b>calm,</b> <b>non-violent</b> and <b>never the aggressor</b> you only <b>fight for survival</b> or if your <b>honor is at stake.</b> <br/> <br/>
+                </p>
+                <p class="secondBit">The Owl Symbolises:</p>
+                <p class="keywords">Comfort</p>
+                <p class="keywords">Freedom</p>
+                <p class="keywords">Keen Sight</p>
+                <p class="keywords">Mystery</p>
+                <p class="keywords">Protection</p>
+                <p class="keywords">Stealth</p>
+                <p class="keywords">Vision</p>
+                <p class="keywords">Wisdom</p>
+            </article>
+            
+            <article id="wolfA">
+                <p class="smallTitle">Your Spirit Animal Is...</p>
+                <h1>THE WOLF</h1>
+                <img src="spiritAnimalPictures/wolf-1992716_1920.jpg" alt="Bear Image"/>
+                <p class="description">
+                    <b>Family comes first</b> is what you go by. You <b>form deep connections</b> with close friends and family members, and they know you'd do anything to protect them. <br/>You're <b>loyal</b>, <b>devoted</b> and <b>passionate.</b> <br/>You have an innate connection with Nature and a craving for <b>freedom</b>. <br/>Your life is filled with the <b>intense instincts</b> who constantly keeps you <b>vigilant</b> in the <b>face of potential danger.</b> Sometimes you don’t trust yourself as much as you should. When you find yourself falling into that emotional pattern rely on your <b>keen mind</b> and <b>logic</b> to renew balance. <br/>You are a <b>natural-born leader</b>, <b>clear-headed</b> and <b>strong-minded.</b> <br/> <br/>
+                </p>
+                <p class="secondBit">The Wolf Symbolises:</p>
+                <p class="keywords">Attachment</p>
+                <p class="keywords">Freedom</p>
+                <p class="keywords">Friendly</p>
+                <p class="keywords">Intelligent</p>
+                <p class="keywords">Nobility</p>
+                <p class="keywords">Order</p>
+                <p class="keywords">Sociable</p>
+                <p class="keywords">Strength</p>
+            </article>
+        </div>
+        
+        <script src="jsSpirit/jsSpirit.js"></script>
+        
+    </body>
+    
+</html>
